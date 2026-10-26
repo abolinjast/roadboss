@@ -1,0 +1,3 @@
+*.o
+cmd/roadboss/filter_bpf*.go
+/roadboss
