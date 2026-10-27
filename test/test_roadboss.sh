@@ -1,4 +1,7 @@
 #!/bin/bash
+
+set -euo pipefail
+
 if [ "$1" == "create" ]; then
 
     sudo ip netns add roadbosstest
