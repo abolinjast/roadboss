@@ -1,0 +1,14 @@
+[Unit]
+Description=roadboss XDP filter
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+EnvironmentFile=/etc/roadboss/roadboss.env
+ExecStart=/usr/local/bin/roadboss attach -iface ${IFACE} -mode ${MODE}
+ExecStop=/usr/local/bin/roadboss detach -iface ${IFACE}
+
+[Install]
+WantedBy=multi-user.target
