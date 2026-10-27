@@ -1,3 +1,5 @@
+This is what i created in order to learn eBPF/XDP and see what differences does it make than using nftables and Netfilter
+
 Requirements
 go
 ubuntu/debian
